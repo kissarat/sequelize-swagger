@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/kissarat/sequelize-swagger#readme",
   "dependencies": {
-    "auxiliary": "^0.1.1"
+    "auxiliary": "^0.1.1",
+    "sequelize": "^5.21.3"
   }
 }
