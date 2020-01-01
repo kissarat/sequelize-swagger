@@ -1,0 +1,32 @@
+{
+  "name": "sequelize-swagger",
+  "version": "0.0.1",
+  "description": "Generates swagger based on Sequelize models and your additional JSON Schema description",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kissarat/sequelize-swagger.git"
+  },
+  "keywords": [
+    "swagger",
+    "sequelize",
+    "generator",
+    "schema",
+    "json-schema",
+    "swagger3",
+    "models",
+    "orm"
+  ],
+  "author": "Taras Labiak <kissarat@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kissarat/sequelize-swagger/issues"
+  },
+  "homepage": "https://github.com/kissarat/sequelize-swagger#readme",
+  "dependencies": {
+    "auxiliary": "^0.1.1"
+  }
+}

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+PROJECT_DIR=$(${BIN}/realpath ${PROJECT_DIR})
+BIN=$(${BIN}/realpath ${BIN})
+export PATH=${PATH}:${PROJECT_DIR}/node_modules/.bin:${BIN}
+cd $PROJECT_DIR
+PROJECT_DIR=${PROJECT_DIR} \
+PS1="\W \[$(tput sgr0)\]\[\033[38;5;2m\]\@\[$(tput sgr0)\]\[\033[38;5;15m\]\\$ \[$(tput sgr0)\]" \
+bash

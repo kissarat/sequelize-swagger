@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pushd . > /dev/null
+cd $1
+echo $PWD
+popd > /dev/null
