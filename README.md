@@ -1,4 +1,10 @@
 # Swagger generator for Sequelize models
-Description will be soon
+[![Build Status](https://travis-ci.org/kissarat/sequelize-swagger.svg?branch=master)](https://travis-ci.org/kissarat/sequelize-swagger)
 
-Copyright © 2020, Taras Labiak <kissarat@gmail.com>
+Generates [JSON Schema](https://json-schema.org/understanding-json-schema/) for Sequelize Model
+```bash
+npm install -S sequelize-swagger
+```
+
+
+Author: Taras Labiak <kissarat@gmail.com>
