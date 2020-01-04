@@ -9,7 +9,7 @@ module.exports = function describe(model, options = { modelRef: '#/components/sc
             required.push(name);
         }
         const base = types[attribute.type.constructor.name];
-        const definition = { ...base };
+        const definition = Object.assign({}, base);
         if (attribute.noUpdate) {
             definition.readOnly = true;
         }
@@ -42,7 +42,7 @@ module.exports = function describe(model, options = { modelRef: '#/components/sc
     for(const [ name, relation ] of Object.entries(model.associations)) {
         properties[name] = relation.associationType === 'HasMany'
             ? { type: 'array', readOnly: true, items: reference(relation) }
-            : { ...reference(relation), readOnly: true }
+            : Object.assign(reference(relation), { readOnly: true })
     }
     return {
         type: 'object',

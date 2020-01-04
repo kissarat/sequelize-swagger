@@ -61,11 +61,11 @@ function relations(db) {
     as: 'parent',
     foreignKey: 'parentId'
   });
-  db.User.hasMany(db.User, {
-    as: 'children',
-    foreignKey: 'id',
-    sourceKey: 'parentId'
-  });
+  // db.User.hasMany(db.User, {
+  //   as: 'children',
+  //   foreignKey: 'id',
+  //   sourceKey: 'parentId'
+  // });
 }
 
 relations(db);
