@@ -6,7 +6,6 @@ node_js:
 services:
   - postgresql
 install:
-  apt install postgresql postgresql-client -y &&
   psql -c "create user sequelize_swagger_test with password 'sequelize_swagger_test';" -c postgres &&
   psql -c "create database sequelize_swagger_test owner sequelize_swagger_test;" -c postgres
 env:
