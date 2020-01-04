@@ -3,9 +3,9 @@ const { sequelize } = require('./models');
 const describe = require('../../src/sequelize/describe');
 
 const server = http.createServer(function(req, res) {
-    const definitions = {};
+    const definitions = { schema: {} };
     for(const model of Object.values(sequelize.models)) {
-        definitions[model.name] = describe(model)
+        definitions.schema[model.name] = describe(model)
     }
     res.write(JSON.stringify({
         definitions
