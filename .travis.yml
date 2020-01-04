@@ -4,6 +4,8 @@ node_js:
   - 12
 services:
   - postgresql
+addons:
+  postgresql: '10'
 before_script:
   psql -c "create user sequelize_swagger_test with password 'sequelize_swagger_test';" -c postgres
   psql -c "create database sequelize_swagger_test owner sequelize_swagger_test;" -c postgres
