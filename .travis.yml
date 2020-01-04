@@ -4,13 +4,10 @@ node_js:
   - 12
 services:
   - postgresql
-addons:
-  postgresql: '10'
-    apt:
-      packages:
-      - postgresql-10
-      - postgresql-client-10
-before_script:
+os:
+  - linux
+install:
+  apt install postgresql postgresql-client
   psql -c "create user sequelize_swagger_test with password 'sequelize_swagger_test';" -c postgres
   psql -c "create database sequelize_swagger_test owner sequelize_swagger_test;" -c postgres
 env:
