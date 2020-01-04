@@ -65,7 +65,19 @@ fs.readdirSync(`${__dirname}`)
     db[model.name] = model;
   });
 
-// relations(db);
+function relations(db) {
+  db.User.hasOne(db.User, {
+    as: 'parent',
+    foreignKey: 'parentId'
+  });
+  db.User.hasMany(db.User, {
+    as: 'children',
+    foreignKey: 'id',
+    sourceKey: 'parentId'
+  });
+}
+
+relations(db);
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;

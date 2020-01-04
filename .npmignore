@@ -46,6 +46,7 @@
 *~
 $RECYCLE.BIN/
 coverage
+examples/
 Icon
 lcov.info
 lib-cov

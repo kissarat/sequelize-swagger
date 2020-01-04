@@ -1,6 +1,6 @@
 {
   "name": "sequelize-swagger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generates swagger based on Sequelize models and your additional JSON Schema description",
   "main": "src/index.js",
   "scripts": {
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/kissarat/sequelize-swagger#readme",
   "dependencies": {
-    "auxiliary": "^0.1.1",
+    "auxiliary": "^0.1.3",
     "sequelize": "^5.21.3"
   },
   "devDependencies": {
