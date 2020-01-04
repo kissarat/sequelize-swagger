@@ -2,3 +2,12 @@ language: node_js
 node_js:
   - 7
   - 12
+services:
+  - postgresql
+before_script:
+  psql -c "create user sequelize_swagger_test with password 'sequelize_swagger_test';" -c postgres
+  psql -c "create database sequelize_swagger_test owner sequelize_swagger_test;" -c postgres
+env:
+  - DB_NAME=sequelize_swagger_test
+  - DB_USER=sequelize_swagger_test
+  - DB_PASSWORD=sequelize_swagger_test

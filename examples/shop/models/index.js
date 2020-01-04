@@ -11,7 +11,7 @@ const config = {
   host: process.env.DB_HOST,
   logging: string => console.log(string),
   operatorsAliases: '0',
-  pool: { min: 0, max: 4, acquire: 20000, idle: 20000 },
+  pool: { min: 0, max: 4, acquire: 20000, idle: 100 },
   port: 5432,
   define: {
     createdAt: 'createdAt',
