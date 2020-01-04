@@ -11,5 +11,6 @@ module.exports = {
     Integer: defineNumber('int64', Number.MAX_SAFE_INTEGER),
     PositiveInt32: defineNumber('int32', MaxInt32, 1),
     PositiveInteger: defineNumber('int64', Number.MAX_SAFE_INTEGER, 1),
-    Boolean: { type: 'boolean' }
+    Boolean: { type: 'boolean' },
+    String: { type: 'string', maxLength: 2 ** 14 }
 }

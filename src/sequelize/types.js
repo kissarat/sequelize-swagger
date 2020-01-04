@@ -11,7 +11,7 @@ const types = {
     INTEGER: primitives.Int32,
     JSON: { type: 'object', required: [], properties: {} },
     REAL: { type: 'number' },
-    STRING: { type: 'string' },
+    STRING: primitives.String,
     TEXT: { type: 'string' },
     UUID: { type: 'string', pattern: "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}"}
 }
